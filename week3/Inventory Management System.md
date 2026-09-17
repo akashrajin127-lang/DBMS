@@ -1,11 +1,11 @@
 Inventory Management System
-📌 Project Overview
+ Project Overview
 
 The Inventory Management System is a MySQL-based database project designed to manage sellers, products, stock quantities, and product prices efficiently.
 
 The system maintains relationships between sellers and their inventory and demonstrates essential database operations such as CRUD operations, aggregate functions, primary keys, foreign keys, and SQL queries.
 
-🎯 Objectives
+ Objectives
 Manage seller information.
 Store and maintain product details.
 Track available inventory quantities.
@@ -14,7 +14,7 @@ Perform Create, Read, Update, and Delete (CRUD) operations.
 Identify out-of-stock products.
 Calculate inventory statistics using aggregate functions.
 Maintain data integrity using primary and foreign keys.
-🛠️ Technologies Used
+Technologies Used
 Database: MySQL
 Language: SQL
 Tool: MySQL Workbench
@@ -62,12 +62,12 @@ seller_id (FK)
 
 One seller can manage multiple inventory products.
 
-👥 Sample Sellers
+ Sample Sellers
 Seller ID	Seller Name
 1	Akash
 2	Samuvel
 3	Kartheswaar
-📦 Sample Products
+Sample Products
 Product	Quantity	Price	Seller
 Laptop	20	₹50,000	Akash
 Mobile	45	₹18,000	Akash
@@ -110,7 +110,7 @@ Highest stocked product
 Average inventory quantity
 Total inventory quantity
 Total inventory value
-📊 Important SQL Queries
+Important SQL Queries
 Total Products
 SELECT COUNT(*) AS total_products
 FROM inventory;
@@ -134,7 +134,7 @@ FROM inventory;
 Total Inventory Value
 SELECT SUM(quantity * price) AS total_inventory_value
 FROM inventory;
-🔐 Data Integrity
+Data Integrity
 
 The database uses:
 
@@ -142,7 +142,7 @@ Primary Key – Uniquely identifies each seller and inventory record.
 Foreign Key – Connects inventory records with sellers.
 NOT NULL – Ensures required fields contain values.
 AUTO_INCREMENT – Automatically generates unique IDs.
-▶️ How to Run
+ How to Run
 Install MySQL Server and MySQL Workbench.
 Open MySQL Workbench.
 Create a new SQL query.
@@ -154,7 +154,7 @@ USE inventory_db;
 
 SELECT * FROM seller;
 SELECT * FROM inventory;
-⚠️ Safe Update Mode
+Safe Update Mode
 
 If MySQL Workbench displays Error Code 1175 while updating a record, use the primary key in the WHERE condition.
 
@@ -166,12 +166,12 @@ WHERE inventory_id = 8;
 
 This avoids Safe Update Mode errors because inventory_id is a key column.
 
-📁 Project Structure
+ Project Structure
 Inventory-Management-System/
 │
 ├── inventory.sql
 └── README.md
-🚀 Future Enhancements
+Future Enhancements
 
 The project can be extended with:
 
@@ -183,14 +183,8 @@ Product categories
 Automatic stock updates
 User authentication
 Inventory reports and dashboards
-👨‍💻 Author
-
-Akash
-
-Project Type
-
+  About:
+Project Type:
 Database Management System (DBMS) Project
-
-Domain
-
+Domain:
 Inventory Management
